@@ -27,4 +27,16 @@ describe("Unit Test for gettes about User object", () => {
         expect(user.getDateCreated).not.toBeUndefined()
         expect(user.lastUpdated).not.toBeUndefined()
     });
-}) 
+})  
+
+describe("Unit tests for setters about User class", () =>{
+    test("Add setters",() =>{
+        //código que usaremos
+        const user = new User(1,"carlogilmar", "Carlo", "Bio")
+        user.setUsername = "Gilmar"
+        user.setBio = "New Bio"
+        //validadición    
+        expect(user.username).toBe("Gilmar")
+        expect(user.bio).toBe("New Bio")
+    })
+})
