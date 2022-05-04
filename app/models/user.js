@@ -24,7 +24,7 @@ class User{
     }
 
     set setUsername(newUsername){
-        this.username= newUsername
+        this.username = newUsername
     }
 
     set setBio(newBio){

@@ -26,3 +26,12 @@ describe("Unit Test for the method getInfo in UserService class",() => {
         expect(userInfoList[3]).toBe("Sin Bio")
     });
 })
+
+describe("Unit Test for the method updateUserUsername in UserService class",() => {
+    test("Test the static method updateUserUsername", () => {
+        const user = UserService.create(3,"alfello","Alfredo", "I'm coding") 
+        UserService.updateUserUsername(user,"Alfellopr")
+    
+        expect(user.username).toBe("ALfellooooo")
+    });
+})
