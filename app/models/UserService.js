@@ -13,6 +13,12 @@ class userService{
     static updateUserUsername(user, newUsername){
         user.setUsername = newUsername
     }
+
+    static getAllUsernames([user,user2,user3]){
+        return [user.username, user2.username, user3.username]
+    }
+
+
 }
 
 module.exports = userService
